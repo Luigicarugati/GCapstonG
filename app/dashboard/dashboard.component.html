@@ -1,0 +1,41 @@
+<body>
+  <mat-card>
+    <b><span>Dashboard</span></b>
+  </mat-card>
+  <br>
+
+  <div class="row">
+    <!-- Category Card -->
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2 class="title">Categorie:</h2>
+          <h1 class="title">{{data?.category}}</h1>
+          <p><button class="button" [routerLink]="['/cafe/category']">Guarda categorie</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card -->
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2 class="title">Prodtti:</h2>
+          <h1 class="title">{{data?.product}}</h1>
+          <p><button class="button" [routerLink]="['/cafe/product']">Guarda prodotti</button></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bill Card -->
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2 class="title">Fatture:</h2>
+          <h1 class="title">{{data?.bill}}</h1>
+          <p><button class="button" [routerLink]="['/cafe/bill']">Guarda fatture</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
